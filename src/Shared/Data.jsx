@@ -124,7 +124,7 @@ const Category = [
   {
     id: 1,
     name: "SUV",
-    icon: "/public/icons_category/suv.svg",
+    icon: "/public/icons_category/suv2.svg",
   },
   {
     id: 2,
@@ -144,13 +144,13 @@ const Category = [
   {
     id: 5,
     name: "Convertible",
-    icon: "/public/icons_category/conversivel.svg",
+    icon: "/public/icons_category/2024 Lexus LC@2x.svg",
   },
 
   {
     id: 7,
     name: "Coupe",
-    icon: "/public/icons_category/sup-car.svg",
+    icon: "/public/icons_category/rally.avif",
   },
   {
     id: 8,
@@ -160,7 +160,7 @@ const Category = [
   {
     id: 9,
     name: "Truck",
-    icon: "/public/icons_category/scania2.svg",
+    icon: "/public/icons_category/scania.svg",
   },
 ];
 

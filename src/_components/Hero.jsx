@@ -1,4 +1,5 @@
 import Search from "./Search";
+import { BannerCarousel } from "./banner-carousel";
 
 function Hero() {
   return (
@@ -12,7 +13,9 @@ function Hero() {
         </h2>
 
         <Search />
-        <img src="/tesla.png" className="mt-10" />
+
+        {/* <img src="/tesla.png" className="mt-10" /> */}
+        <BannerCarousel className="mt-10" />
       </div>
     </div>
   );
