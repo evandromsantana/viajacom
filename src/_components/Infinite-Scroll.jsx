@@ -5,13 +5,15 @@ const AppContainer = ({ children }) => (
 );
 
 const Wrapper = ({ children }) => (
-  <div className="w-full h-fit flex items-center justify-center flex-col bg-[#eef0fc]">
+  <div className="w-full h-fit flex items-center justify-center flex-col bg-[#eef0fc] pb-6">
     {children}
   </div>
 );
 
 const Text = ({ children }) => (
-  <div className="pt-4 text-xl font-bold mb-1 text-gray-600">{children}</div>
+  <div className="py-4 text-xl px-6 font-semibold mb-1 text-gray-400">
+    {children}
+  </div>
 );
 
 const Marquee = ({ images, speed = 50 }) => {
@@ -36,10 +38,10 @@ const Marquee = ({ images, speed = 50 }) => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden w-full">
+    <div className="relative overflow-hidden w-full ">
       <div
         ref={marqueeRef}
-        className="flex space-x-4 w-full"
+        className="flex space-x-4 w-35 h-35"
         style={{ whiteSpace: "nowrap" }}
       >
         {[...images, ...images].map((image, index) => (
@@ -47,7 +49,7 @@ const Marquee = ({ images, speed = 50 }) => {
             key={index}
             src={image.src}
             alt={image.alt}
-            className="object-contain w-25 h-24 rounded-lg p-6 "
+            className="object-contain w-24 h-24 rounded-lg p-4 bg-[#fff]"
           />
         ))}
       </div>

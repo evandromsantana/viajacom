@@ -4,7 +4,7 @@ import { CarouselMark } from "./Carousel-mark";
 
 function Category() {
   return (
-    <div className="mt-40">
+    <div className="mt-40 pb-6">
       <h2 className="font-bold text-3xl text-center mb-6">
         Escolher por Categoria
       </h2>
@@ -19,7 +19,7 @@ function Category() {
               alt={`${category.name} categoria`}
               className="rounded-md"
             />
-            <h2 className="inline-flex items-center justify-center rounded-md text-sm font-medium  mt-6 h-8  bg-[#E6EBEE] ">
+            <h2 className="inline-flex items-center justify-center rounded-md text-sm font-medium  mt-6 h-8  bg-primary text-white ">
               {category.name}
             </h2>
           </div>
