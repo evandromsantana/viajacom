@@ -1,21 +1,5 @@
 import { useRef, useEffect } from "react";
 
-const AppContainer = ({ children }) => (
-  <div className="flex items-center justify-center ">{children}</div>
-);
-
-const Wrapper = ({ children }) => (
-  <div className="w-full h-fit flex items-center justify-center flex-col bg-[#eef0fc] pb-6">
-    {children}
-  </div>
-);
-
-const Text = ({ children }) => (
-  <div className="py-4 text-xl px-6 font-semibold mb-1 text-gray-400">
-    {children}
-  </div>
-);
-
 const Marquee = ({ images, speed = 50 }) => {
   const marqueeRef = useRef(null);
 
@@ -38,7 +22,7 @@ const Marquee = ({ images, speed = 50 }) => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden w-full ">
+    <div className="relative overflow-hidden w-full">
       <div
         ref={marqueeRef}
         className="flex space-x-4 w-35 h-35"
@@ -49,7 +33,7 @@ const Marquee = ({ images, speed = 50 }) => {
             key={index}
             src={image.src}
             alt={image.alt}
-            className="object-contain w-24 h-24 rounded-lg p-4 bg-[#fff]"
+            className="object-contain w-20 h-20 rounded-ss-3xl rounded-ee-3xl p-4 bg-white border"
           />
         ))}
       </div>
@@ -61,7 +45,7 @@ const InfinityScroll = () => {
   const images = [
     { src: "/icons_mark/audi-13.svg", alt: "Audi" },
     { src: "/icons_mark/bmw-7.svg", alt: "bmw" },
-    { src: "/icons_mark/chevrolet-10.svg", alt: "chevrolet" },
+    { src: "/icons_mark/chevrolet-4.svg", alt: "chevrolet" },
     { src: "/icons_mark/ferrari-ges.svg", alt: "ferrari" },
     { src: "/icons_mark/ford-6.svg", alt: "ford" },
     { src: "/icons_mark/honda-automobiles-1.svg", alt: "Honda" },
@@ -81,12 +65,12 @@ const InfinityScroll = () => {
   ];
 
   return (
-    <AppContainer>
-      <Wrapper>
-        <Text>Principais Marcas.</Text>
-        <Marquee images={images} />
-      </Wrapper>
-    </AppContainer>
+    <div className="flex items-center justify-center w-full h-fit flex-col">
+      <div className="py-2 text-xl px-6 font-semibold mb-1 text-gray-400">
+        Principais Marcas.
+      </div>
+      <Marquee images={images} />
+    </div>
   );
 };
 

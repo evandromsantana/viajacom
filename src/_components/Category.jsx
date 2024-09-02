@@ -1,7 +1,5 @@
 import Data from "@/Shared/Data";
 
-import { CarouselMark } from "./Carousel-mark";
-
 function Category() {
   return (
     <div className="mt-40 pb-6">
@@ -19,7 +17,7 @@ function Category() {
               alt={`${category.name} categoria`}
               className="rounded-md"
             />
-            <h2 className="inline-flex items-center justify-center rounded-md text-sm font-medium  mt-6 h-8  bg-primary text-white ">
+            <h2 className="inline-flex items-center justify-center rounded-md text-sm font-medium  mt-6 h-8  bg-[#29375B] text-white ">
               {category.name}
             </h2>
           </div>

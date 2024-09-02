@@ -21,7 +21,7 @@ const PromoBanner = ({ src, alt }) => (
 
 export function BannerCarousel() {
   return (
-    <Carousel className="flex items-center p-10 py-25 h-[650px] w-full ">
+    <Carousel className="flex items-center py-20 h-[650px] w-full ">
       <CarouselContent>
         {images.map((image, index) => (
           <CarouselItem key={index}>
