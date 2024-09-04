@@ -34,18 +34,18 @@ const Marquee = ({ images, speed = 50 }) => {
         {[...images, ...images].map((image, index) => (
           <div
             key={index}
-            className="flex flex-col  w-40 h-24 size-auto py-2 px-2 rounded-xl rounded-ss-3xl rounded-ee-3xl shadow-lg items-center justify-center  border border-gray-200 bg-white"
+            className="flex flex-col  w-40 h-24 size-auto py-2 px-2 rounded-xl rounded-ss-3xl rounded-ee-3xl shadow-lg items-center justify-center  border border-gray-200 bg-white m-2"
           >
             <img
               src={image.icon}
               alt={`${image.name} nome`}
-              className="w-10 m-2"
+              className="h-12 m-2"
             />
             <Separator
               orientation="horizontal"
               className="hidden md:block w-20"
             />
-            <h2 className="text-xs font-medium text-gray-400 text-button ">
+            <h2 className="text-[10px] font-medium text-gray-400 text-button ">
               {image.name}
             </h2>
           </div>
