@@ -13,7 +13,7 @@ import {
 const images = [
   { src: "/icons_mark/audi-13.svg", alt: "Audi" },
   { src: "/icons_mark/bmw-7.svg", alt: "bmw" },
-  { src: "/icons_mark/chevrolet-10.svg", alt: "chevrolet" },
+  { src: "/icons_mark/chevrolet-4.svg", alt: "chevrolet" },
   { src: "/icons_mark/ferrari-ges.svg", alt: "ferrari" },
   { src: "/icons_mark/ford-6.svg", alt: "ford" },
   { src: "/icons_mark/honda-automobiles-1.svg", alt: "Honda" },
