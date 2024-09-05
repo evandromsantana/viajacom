@@ -14,7 +14,6 @@ function Hero() {
 
         <Search />
 
-        {/* <img src="/tesla.png" className="mt-10" /> */}
         <BannerCarousel className="mt-10" />
       </div>
     </div>

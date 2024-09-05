@@ -1,7 +1,20 @@
 import { useRef, useEffect } from "react";
-import Data from "@/Shared/Data";
 
+import Data from "@/Shared/Data";
 import { Separator } from "@/_components/ui/separator";
+
+const LogoScroll = () => {
+  const images = Data.CarMakes;
+
+  return (
+    <div className="flex items-center justify-center w-full h-fit flex-col">
+      <div className="py-2 text-xl px-6 font-semibold mb-1 text-gray-600">
+        Principais Marcas.
+      </div>
+      <Marquee images={images} />
+    </div>
+  );
+};
 
 const Marquee = ({ images, speed = 50 }) => {
   const marqueeRef = useRef(null);
@@ -25,7 +38,7 @@ const Marquee = ({ images, speed = 50 }) => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden w-full py-2">
+    <div className="relative overflow-hidden w-full py-2 bg-[#f3f4f6]">
       <div
         ref={marqueeRef}
         className="flex space-x-6 px-1 "
@@ -51,19 +64,6 @@ const Marquee = ({ images, speed = 50 }) => {
           </div>
         ))}
       </div>
-    </div>
-  );
-};
-
-const LogoScroll = () => {
-  const images = Data.CarMakes;
-
-  return (
-    <div className="flex items-center justify-center w-full h-fit flex-col">
-      <div className="py-2 text-xl px-6 font-semibold mb-1 text-gray-600">
-        Principais Marcas.
-      </div>
-      <Marquee images={images} />
     </div>
   );
 };

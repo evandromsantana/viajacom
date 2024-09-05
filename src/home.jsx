@@ -6,6 +6,9 @@ import Hero from "./_components/Hero";
 import Category from "./_components/Category";
 
 import LogoScroll from "./_components/logo-Scoll";
+import MostSearchdCar from "./_components/MostSearchdCar";
+import InfoSection from "./_components/InfoSection";
+import Footer from "./_components/Footer";
 
 function Home() {
   return (
@@ -18,6 +21,12 @@ function Home() {
       <Category />
       {/* logomarcas */}
       <LogoScroll />
+      {/* Most Searchd Car */}
+      <MostSearchdCar />
+      {/* InfoSection */}
+      <InfoSection />
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

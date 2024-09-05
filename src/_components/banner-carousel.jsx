@@ -1,17 +1,14 @@
+import * as React from "react";
+import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent } from "./ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "./ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 
 const images = [
   { src: "/carousel/tesla.png", alt: "Tesla Model S" },
-  { src: "/carousel/Audi A3.svg", alt: "Audi A3" },
-  { src: "/carousel/Car.svg", alt: "BMW M3" },
-  { src: "/carousel/2024 Lexus LC@2x.svg", alt: "Ferrari 488 GTB" },
+  { src: "/carousel/Mask group.png", alt: "Ferrari 488 GTB" },
+  { src: "/carousel/SUV.png", alt: "SUV" },
+  { src: "/carousel/car 2 1.png", alt: "Porche" },
+  { src: "/carousel/mercedes.png", alt: "Mercedes" },
 ];
 
 // eslint-disable-next-line react/prop-types
@@ -20,20 +17,25 @@ const PromoBanner = ({ src, alt }) => (
 );
 
 export function BannerCarousel() {
+  const autoplay = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  );
+
   return (
-    <Carousel className="flex items-center py-20 h-[650px] w-full ">
+    <Carousel
+      plugins={[autoplay.current]}
+      className="flex items-center py-10 h-[470px] w-full"
+    >
       <CarouselContent>
         {images.map((image, index) => (
           <CarouselItem key={index}>
-            <div className="">
-              <Card className="bg-transparent border-none">
+            <div className="  object-contain ">
+              <Card className="bg-transparent border-none object-contain  h-[430px]">
                 <CardContent className="flex items-center justify-center p-4">
                   <PromoBanner
                     src={image.src}
                     alt={image.alt}
-                    width={1200}
-                    height={1200}
-                    className="object-cover bg-transparent border-none"
+                    className="object-cover bg-transparent border-none "
                   />
                 </CardContent>
               </Card>
@@ -41,8 +43,6 @@ export function BannerCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
     </Carousel>
   );
 }

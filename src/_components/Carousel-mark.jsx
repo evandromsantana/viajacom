@@ -47,7 +47,7 @@ export function CarouselMark() {
   const [activeSlide, setActiveSlide] = useState(0);
 
   return (
-    <div className="flex justify-center items-center bg-[#eef0fc]">
+    <div className="flex justify-center items-center bg-[#eef0fc] ">
       <Carousel
         className="flex w-full max-w-sm bg-red-500"
         onAfterChange={(currentSlide) => setActiveSlide(currentSlide)}

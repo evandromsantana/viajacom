@@ -3,7 +3,6 @@ import { Button } from "./ui/button";
 import { FaMapMarked, FaClock, FaPhone } from "react-icons/fa";
 
 function Header() {
-  // eslint-disable-next-line no-unused-vars
   const { user, isSignedIn } = useUser();
 
   return (
