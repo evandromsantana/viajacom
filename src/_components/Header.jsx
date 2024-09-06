@@ -41,7 +41,7 @@ function Header() {
       </div>
 
       {/* Navigator */}
-      <div className="flex justify-between items-center shadow-sm p-2">
+      <div className="flex justify-between items-center shadow-sm p-2 ">
         {/* Logo */}
         <AnimatedLogo />
 
