@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 const AnimatedLogo = () => {
   return (
     <div className="relative w-[307px] h-[50px] m-1">
