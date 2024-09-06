@@ -18,7 +18,7 @@ const PromoBanner = ({ src, alt }) => (
 
 export function BannerCarousel() {
   const autoplay = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 7000, stopOnInteraction: true })
   );
 
   return (

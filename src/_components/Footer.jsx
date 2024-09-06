@@ -1,14 +1,13 @@
 import {
   FaPhone,
   FaGithub,
-  FaTwitter,
-  FaFacebook,
   FaLinkedin,
   FaEnvelope,
-  FaDribbble,
   FaMapMarked,
   FaInstagram,
 } from "react-icons/fa";
+
+import AnimatedLogo from "./logo";
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -19,12 +18,8 @@ function Footer() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex justify-center text-gray-300 sm:justify-start">
-              <img
-                src="/logo.svg"
-                width={250}
-                height={41}
-                className="h-12 bg-gray-400 rounded py-2"
-              />
+              {/* Logo */}
+              <AnimatedLogo className="gap-4" />
             </div>
 
             <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
@@ -41,18 +36,6 @@ function Footer() {
                   target="_blank"
                   className="text-primary transition hover:text-blue-700/75"
                 >
-                  <span className="sr-only">Facebook</span>
-                  <FaFacebook className="size-6" />
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-primary transition hover:text-blue-700/75"
-                >
                   <span className="sr-only">Instagram</span>
                   <FaInstagram className="size-6" />
                 </a>
@@ -60,19 +43,7 @@ function Footer() {
 
               <li>
                 <a
-                  href="#"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-primary transition hover:text-blue-700/75"
-                >
-                  <span className="sr-only">Twitter</span>
-                  <FaTwitter className="size-6" />
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
+                  href="https://github.com/evandromsantana"
                   rel="noreferrer"
                   target="_blank"
                   className="text-primary transition hover:text-blue-700/75"
@@ -84,16 +55,13 @@ function Footer() {
 
               <li>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/evandro-m-santana/"
                   rel="noreferrer"
                   target="_blank"
                   className="text-primary transition hover:text-blue-700/75"
                 >
                   <span className="sr-only">Linkendin</span>
-                  <FaLinkedin
-                    className="size-6"
-                    href="https://www.linkedin.com/in/evandro-m-santana/"
-                  />
+                  <FaLinkedin className="size-6" />
                 </a>
               </li>
             </ul>
